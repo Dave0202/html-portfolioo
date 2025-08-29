@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salesforce Landing Page Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/512px-Salesforce.com_logo.svg.png" alt="Salesforce Logo" class="logo">
+      <a href="#">Products</a>
+      <a href="#">Industries</a>
+      <a href="#">Customers</a>
+      <a href="#">Learning</a>
+      <a href="#">Support</a>
+      <div class="dropdown-group">
+        <button class="dropdown-toggle" id="moreBtn">More ▼</button>
+        <ul class="dropdown-menu" id="moreMenu">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <a href="#">Contact Us</a>
+      <span class="phone">1-800-664-9073</span>
+      <span class="icon globe-dropdown-toggle" id="globeBtn">&#127758;</span>
+      <ul class="dropdown-menu globe" id="globeMenu">
+        <li><a href="#">English</a></li>
+        <li><a href="#">Français</a></li>
+        <li><a href="#">Español</a></li>
+      </ul>
+      <div class="dropdown-group">
+        <button class="dropdown-toggle login-dropdown-toggle" id="loginBtn"><span class="icon">👤</span> Login</button>
+        <ul class="dropdown-menu" id="loginMenu">
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">Create Account</a></li>
+          <li><a href="#">Partner Login</a></li>
+        </ul>
+      </div>
+      <a href="#" class="try-free-btn">Try for free</a>
+    </div>
+  </nav>
+
+  <!-- Support Banner -->
+  <div class="support-banner">
+    Need Salesforce support? Get answers fast from our AI agent on Salesforce Help.
+    <a href="#" class="support-link">Go to Help</a>
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="main-content">
+    <div class="content-left">
+      <span class="small-heading">Salesforce. The #1 AI CRM.</span>
+      <h1>
+        <span class="blue-text">Grow faster</span> and<br>
+        work smarter.
+      </h1>
+      <p>
+        Start simply with Starter Suite, the all-in-one CRM for small business. Then scale endlessly with autonomous AI agents, unified data, and CRM apps together on one integrated platform. And connect with customers in a whole new way.
+      </p>
+      <a href="#" class="try-free-btn2">Try for free</a>
+    </div>
+    <div class="content-right">
+      <div class="dashboard-wrapper">
+        <img src="https://i.imgur.com/2Syij0k.png" alt="Dashboard Screenshot" class="dashboard-img">
+        <div class="play-btn"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat and Action Bar -->
+  <div class="chat-bar">
+    <input id="chatInput" type="text" placeholder="Ask me about products, features, and pricing, or connect to a sales rep.">
+    <button class="chat-send-btn" onclick="sendChat()">➤</button>
+    <div class="action-buttons">
+      <button>Connect me with a sales rep</button>
+      <button>Show me an Agentforce demo</button>
+      <button>How can Salesforce help my business</button>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
